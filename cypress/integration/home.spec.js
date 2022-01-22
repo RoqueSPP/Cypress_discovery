@@ -16,7 +16,7 @@ describe('Test Signup', () => {
         sinup.fillForm(deliver)
         sinup.submit()
         var expecttext = 'Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.'
-        sinup.alertmensage(expecttext)
+        cy.contains('.alert-.swal2-container .swal2-html-container', expecttext).should('be.visible')
 
     })
     it('Invalid Document', function () {
