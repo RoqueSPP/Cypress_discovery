@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open --browser chrome"
   },
   "author": "roque",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.3.1",
+    "cypress": "^9.1.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-xpath": "^1.6.2",
     "faker": "^5.5.3",

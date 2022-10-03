@@ -1,0 +1,55 @@
+{
+    "signup":{
+        "name": "Roque Pires",
+        "cpf": "22200099999",
+        "email": "rsppnet@hotmai.com",
+       "wat": "119999999999",
+        "delivery_method": "moto",
+        "address": {
+            "postalcode": "06725110",
+            "street": "Rua José Lopes Neto",
+            "number": "41",
+            "details": "casa",
+            "district": "Centro (Caucaia do Alto)",
+            "city_state": "Cotia/SP"
+        },
+        "doc": "cnh-digital.jpg"
+
+    },
+
+    "cpf_inv":{
+        "name": "Roque Pires",
+        "cpf": "AA200099999",
+        "email": "rsppnet@hotmai.com",
+       "wat": "119999999999",
+        "delivery_method": "moto",
+        "address": {
+            "postalcode": "06725110",
+            "street": "Rua José Lopes Neto",
+            "number": "41",
+            "details": "casa",
+            "district": "Centro (Caucaia do Alto)",
+            "city_state": "Cotia/SP"
+        },
+        "doc": "cnh-digital.jpg"
+    },
+
+     "email_inv":{
+        "name": "Roque Pires",
+        "cpf": "22200099999",
+        "email": "rsppnet!hotmai.com",
+       "wat": "119999999999",
+        "delivery_method": "moto",
+        "address": {
+            "postalcode": "06725110",
+            "street": "Rua José Lopes Neto",
+            "number": "41",
+            "details": "casa",
+            "district": "Centro (Caucaia do Alto)",
+            "city_state": "Cotia/SP"
+        },
+    
+        "doc": "cnh-digital.jpg"
+    }
+
+}
