@@ -1,7 +1,6 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-  projectId: "gmzveu",
   viewportWidth: 1000,
   viewportHeight: 660,
   urlBase: 'https://buger-eats-qa.vercel.app',

@@ -1,8 +1,6 @@
 
 const message = [
-    {
-        alert:'name',
-            output: 'É necessário informar o nome'},
+    { alert:'name', output: 'É necessário informar o nome'},
     { alert: 'CPF', output: 'É necessário informar o CPF' },
     { alert: 'email', output: 'É necessário informar o email' },
     { alert: 'cep', output: 'É necessário informar o CEP' },
