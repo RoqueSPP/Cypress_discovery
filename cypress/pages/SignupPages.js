@@ -31,7 +31,7 @@ class SignupPages {
         cy.get('button[type="submit"]').should('be.visible').click()
     }
     alertmensage(expecttext) {
-        // cy.get('.alert-error').should('have.text', expecttext)
+        cy.get('.alert-error').should('have.text', expecttext)
         cy.contains('.alert-error', expecttext).should('be.visible')
     
     }

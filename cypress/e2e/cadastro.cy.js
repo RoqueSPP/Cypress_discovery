@@ -1,4 +1,5 @@
 import sig from '../page/Siging'
+import message from '../page/alertError'
 
 describe('cadastro', function () {
 
@@ -8,7 +9,7 @@ describe('cadastro', function () {
         })
     })
 
-    it('Seja um delivery', function () {
+    it.skip('Seja um delivery', function () {
         const expectmassage =
             'Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.'
         sig.go()
@@ -17,17 +18,29 @@ describe('cadastro', function () {
         sig.expectMessage(expectmassage)
     })
 
-    it('Email invalido', function () {
+    it.skip('Email invalido', function () {
         sig.go()
         sig.fillForm(this.mass.email_inv)
         sig.submit()
         sig.alertError('Oops! Email com formato inválido.')
 
     })
-    it('CPF inválido', function () {
+    it.skip('CPF inválido', function () {
         sig.go()
         sig.fillForm(this.mass.cpf_inv)
         sig.submit()
         sig.alertError('Oops! CPF inválido')
+    })
+    context('Requered fields', function () {
+        before(function () {
+            sig.go()
+            sig.submit()
+        })
+    
+        message.forEach(function (msg) {
+            it('Fields Required', function () {
+                sig.alertError(msg.output)
+            })
+        })
     })
 })

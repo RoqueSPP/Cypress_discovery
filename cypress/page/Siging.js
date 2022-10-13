@@ -32,8 +32,9 @@ class Siging {
         cy.get('.swal2-container .swal2-html-container').should('have.text',expectmensage)
 
     }
-    alertError(expectmensage) {
-        cy.get('.alert-error').should('have.text',expectmensage)
+    alertError(expectText) {
+        //cy.get('.alert-error').should('have.text',expectText)
+        cy.contains('.alert-error', expectText).should('be.visible')
 
     }
 }
